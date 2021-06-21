@@ -1,0 +1,44 @@
+{
+  "name": "cg-app",
+  "version": "1.0.0",
+  "description": "cg-app Traders",
+  "author": "Shanti",
+  "email": "skolapalli@gmail.com",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.5",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.13.7",
+    "react-redux": "^7.2.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:delete": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skpriya999/cg-app.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skpriya999/cg-app/issues"
+  },
+  "homepage": "https://github.com/skpriya999/cg-app#readme"
+}
